@@ -8,7 +8,6 @@ import {
     HourlyForecast
 } from '../../interface/weather';
 
-// Асинхронні Thunks
 export const fetchWeatherByCity = createAsyncThunk<
     { city: City; weather: WeatherData },
     City,
@@ -85,7 +84,6 @@ export const fetchHourlyForecastByCityId = createAsyncThunk<
     }
 );
 
-// Початковий стейт
 const initialState: WeatherState = {
     cities: [],
     weatherData: {},
@@ -94,7 +92,6 @@ const initialState: WeatherState = {
     error: null
 };
 
-// Створення Slice
 const weatherSlice = createSlice({
     name: 'weather',
     initialState,
@@ -157,7 +154,6 @@ const weatherSlice = createSlice({
     }
 });
 
-// Експортування дій та ред'юсера
 export const {
     addCity,
     removeCity,
