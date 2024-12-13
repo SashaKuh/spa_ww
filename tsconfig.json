@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "types": ["jest", "node", "@testing-library/jest-dom"],
+    "module": "ESNext",
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": ["src"]
+}
+

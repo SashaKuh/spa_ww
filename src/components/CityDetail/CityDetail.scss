@@ -1,0 +1,48 @@
+.city-detail-page {
+        padding: 20px;
+        color: #333;
+
+        .header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .city-title {
+                        margin: auto;
+                }
+
+                .back-button {
+                        background-color: #db3450;
+                        color: #fff;
+                        padding: 10px 20px;
+                        margin-right: 20px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        // &:hover {
+                        //         background-color: darken(#db3450, 10%);
+                        // }
+                }
+
+                h1 {
+                        margin: 0;
+                }
+        }
+
+        section {
+                margin-bottom: 40px;
+        }
+
+        .current-weather {
+                background-color: #f0f8ff;
+                padding: 20px;
+                border-radius: 10px;
+        }
+
+        .hourly-forecast {
+                background-color: #fafafa;
+                padding: 20px;
+                border-radius: 10px;
+        }
+}

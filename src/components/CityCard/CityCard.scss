@@ -1,0 +1,94 @@
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$background-color: #ffffff;
+$text-color: #333;
+$card-shadow: rgba(0, 0, 0, 0.1);
+
+.city-card {
+        cursor: pointer;
+        background-color: $background-color;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px $card-shadow;
+        padding: 20px;
+        width: 300px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+                transform: scale(1.02);
+        }
+
+        &__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+
+                h2 {
+                        color: $text-color;
+                        margin: 0;
+                }
+        }
+
+        &__actions {
+                display: flex;
+                gap: 10px;
+        }
+
+        &__button {
+                padding: 8px 12px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                color: #fff;
+
+                &--refresh {
+                        background-color: $primary-color;
+
+                        // &:hover {
+                        //         background-color: darken($primary-color, 10%);
+                        // }
+                }
+
+                &--remove {
+                        background-color: $secondary-color;
+
+                        // &:hover {
+                        //         background-color: darken($secondary-color, 10%);
+                        // }
+                }
+        }
+
+        &__main-info {
+                p {
+                        color: $text-color;
+                }
+        }
+
+        @media (max-width: 768px) {
+                width: 90%;
+                margin: 0 auto;
+        }
+}
+
+.modal-content {
+        margin-top: 20px;
+
+        p {
+                margin: 5px 0;
+                color: #333;
+        }
+
+        .forecast-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 0;
+                border-bottom: 1px solid #e0e0e0;
+
+                &:last-child {
+                        border-bottom: none;
+                }
+        }
+}

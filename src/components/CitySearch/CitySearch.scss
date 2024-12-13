@@ -1,0 +1,27 @@
+.city-search-form {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+
+        input {
+                padding: 10px;
+                font-size: 16px;
+                margin-right: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+        }
+
+        button {
+                padding: 10px 20px;
+                background-color: #3498db;
+                color: #fff;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                // &:hover {
+                //         background-color: darken(#3498db, 10%);
+                // }
+        }
+}
